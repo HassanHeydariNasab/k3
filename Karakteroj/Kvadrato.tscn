@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://Karakteroj/Kvadrato.gd" type="Script" id=1]
-[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=2]
-[ext_resource path="res://Karakteroj/kvadrato_malaktivita.png" type="Texture" id=3]
-[ext_resource path="res://Karakteroj/kvadrato.png" type="Texture" id=4]
+[ext_resource path="res://Karakteroj/kvadrato_ardo.png" type="Texture" id=2]
+[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=3]
+[ext_resource path="res://Karakteroj/kvadrato_malaktivita.png" type="Texture" id=4]
+[ext_resource path="res://Karakteroj/kvadrato.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -31,19 +32,23 @@ script/script = ExtResource( 1 )
 
 script/script = SubResource( 2 )
 
+[node name="Ardo" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
 [node name="Fumo" type="Particles2D" parent="."]
 
 visibility/opacity = 0.8
-transform/pos = Vector2( -32, 0 )
+transform/pos = Vector2( -56, 0 )
 config/amount = 8
-config/lifetime = 0.3
+config/lifetime = 0.5
 config/process_mode = 1
 config/half_extents = Vector2( 5, 15 )
 config/local_space = false
-config/texture = ExtResource( 2 )
-params/direction = 0.0
+config/texture = ExtResource( 3 )
+params/direction = -90.0
 params/spread = 15.0
-params/linear_velocity = 0.0
+params/linear_velocity = 200.0
 params/spin_velocity = 0.0
 params/orbit_velocity = 0.0
 params/gravity_direction = 0.0
@@ -60,11 +65,11 @@ params/anim_initial_pos = 0.0
 
 [node name="Aspekto_malaktiva" type="Sprite" parent="."]
 
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="Aspekto_aktiva" type="Sprite" parent="."]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
@@ -77,6 +82,13 @@ _update_shape_index = 0
 playback/process_mode = 1
 playback/active = false
 playback/repeat = false
+playback/speed = 1.0
+
+[node name="Ardi" type="Tween" parent="."]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = true
 playback/speed = 1.0
 
 

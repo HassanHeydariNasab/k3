@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="128"
-   height="128"
-   viewBox="0 0 128 128"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="pikselo.svg"
-   inkscape:export-filename="/home/hsn6/k3/Tegolaroj/pikselo.png"
+   sodipodi:docname="sparko.svg"
+   inkscape:export-filename="/home/hsn6/k3/Partikloj/sparko.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -24,15 +24,15 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter5489"
-       x="-0.24"
-       width="1.48"
-       y="-0.24"
-       height="1.48">
+       id="filter4353"
+       x="-0.43200001"
+       width="1.864"
+       y="-0.43200001"
+       height="1.864">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="12.8"
-         id="feGaussianBlur5491" />
+         stdDeviation="6.2035716"
+         id="feGaussianBlur4355" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -42,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="9.8146504"
-     inkscape:cy="44.517515"
+     inkscape:zoom="5.6"
+     inkscape:cx="31.646388"
+     inkscape:cy="48.924436"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -62,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,13 +70,13 @@
      inkscape:label="Tavolo 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-924.36216)">
-    <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter:url(#filter5489)"
-       id="rect4138"
-       width="128"
-       height="128"
-       x="0"
-       y="924.36218" />
+     transform="translate(0,-1036.3622)">
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#ff6600;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4353);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4136"
+       cx="32"
+       cy="1020.3622"
+       r="17.232143"
+       transform="matrix(0.24906046,0,0,0.24906046,0.0300655,790.23033)" />
   </g>
 </svg>

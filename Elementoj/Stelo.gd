@@ -44,8 +44,8 @@ func _process(delta):
 func _on_Areo_body_enter( korpo ):
 	if korpo.get_layer_mask_bit(1):
 		get_node("Areo").clear_shapes()
-		T.steloj += 100
-		T.Radiko.Steloj_nombroj.set_text(str(T.steloj))
+		T.steloj += 1
+		T.Radiko.Steloj_nombroj.set_text(str(int(T.steloj)))
 		T.Radiko.Stelon_kapti_sono.set("stream/play", T.Agordejo.get_value("Agordoj", "Sonoj", true))
 #		T.Radiko.Steloj_nombroj_Sxangxi.stop_all()
 #		T.Radiko.Steloj_nombroj_Sxangxi.resume_all()
