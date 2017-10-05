@@ -8,9 +8,16 @@ onready var Ardi = get_node("Ardi")
 onready var Aspekto_aktiva = get_node("Aspekto_aktiva")
 onready var Aspekto_malaktiva = get_node("Aspekto_malaktiva")
 onready var Sparko = get_node("/root/Radiko/Sparko")
+onready var Sparko_sono = get_node("/root/Radiko/Sparko_sono")
+onready var Trancxata = get_node("Trancxata")
 
 const RAPIDO = 4
 const RAPIDEGO = 10
+
+var rapidega = false
+
+var vivo = 10.0
+const VIVO = 10.0
 
 func _ready():
 	Aperi.interpolate_property(self, "transform/scale",
@@ -34,6 +41,9 @@ func _fixed_process(delta):
 		T.steloj -= 0.04
 		T.Radiko.Steloj_nombroj.set_text(str(int(T.steloj)))
 		move(Vector2(RAPIDEGO*cos(get_rot()), -RAPIDEGO*sin(get_rot())))
+		rapidega = true
+	else:
+		rapidega = false
 	if Input.is_action_pressed("turni_dekstre"):
 		rotate(deg2rad(-3))
 	elif Input.is_action_pressed("turni_maldekstre"):
@@ -44,8 +54,24 @@ func _process(delta):
 		Sparko.set_global_pos(get_collision_pos())
 		Sparko.set_rot(get_rot())
 		Sparko.set_emitting(true)
-#		if not Sparko_Sono.is_playing():
-#			Sparko_Sono.set("stream/play", Tutmonda.Agordejo.get_value("Agordoj", "Sonoj", true))
+		if not Sparko_sono.is_playing():
+			Sparko_sono.set("stream/play", T.Agordejo.get_value("Agordoj", "Sonoj", true))
 	else:
 		Sparko.set_emitting(false)
-#		Sparko_Sono.stop()
+		Sparko_sono.stop()
+
+func _on_Areo_area_enter( areo ):
+	if T.get_layer_bit(areo, 2):
+		if rapidega:
+			areo.get_parent().Kasxi.start()
+		else:
+			areo.get_parent().Bati.resume_all()
+			areo.get_parent().Bati_sono.play()
+			Trancxata.set_rot(get_rot())
+			Trancxata.set_emitting(true)
+			if vivo > 0:
+				vivo -= 1
+				Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
+
+func _on_Areo_area_exit( areo ):
+	Trancxata.set_emitting(false)

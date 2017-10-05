@@ -18,6 +18,5 @@ func _ready():
 func _process(delta):
 	Kamero.set_offset(Karaktero.get_global_pos())
 
-
 func _input(evento):
 	pass

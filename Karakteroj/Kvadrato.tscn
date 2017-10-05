@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://Karakteroj/Kvadrato.gd" type="Script" id=1]
-[ext_resource path="res://Karakteroj/kvadrato_ardo.png" type="Texture" id=2]
-[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=3]
-[ext_resource path="res://Karakteroj/kvadrato_malaktivita.png" type="Texture" id=4]
-[ext_resource path="res://Karakteroj/kvadrato.png" type="Texture" id=5]
+[ext_resource path="res://Partikloj/sparko.png" type="Texture" id=2]
+[ext_resource path="res://Karakteroj/kvadrato_ardo.png" type="Texture" id=3]
+[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=4]
+[ext_resource path="res://Karakteroj/kvadrato_malaktivita.png" type="Texture" id=5]
+[ext_resource path="res://Karakteroj/kvadrato.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -17,6 +18,11 @@ script/source = "extends Node2D
 
 const TIPO = 4"
 
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 64, 64 )
+
 [node name="Kvadrato" type="KinematicBody2D"]
 
 input/pickable = false
@@ -24,7 +30,7 @@ shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 2
-collision/mask = 2051
+collision/mask = 2049
 collision/margin = 0.08
 script/script = ExtResource( 1 )
 
@@ -32,9 +38,87 @@ script/script = ExtResource( 1 )
 
 script/script = SubResource( 2 )
 
+[node name="Trancxata" type="Particles2D" parent="."]
+
+visibility/opacity = 0.8
+config/amount = 16
+config/lifetime = 0.5
+config/emitting = false
+config/process_mode = 1
+config/local_space = false
+config/explosiveness = 0.9
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 20.0
+params/linear_velocity = 600.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.5
+params/final_size = 0.7
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/direction = 0.3
+randomness/spread = 0.3
+randomness/linear_velocity = 0.25
+randomness/initial_size = 0.3
+randomness/final_size = 0.5
+randomness/hue_variation = 0.02
+
+[node name="Fiasko" type="Particles2D" parent="."]
+
+config/amount = 8
+config/lifetime = 2.0
+config/process_mode = 1
+config/local_space = false
+params/direction = 0.0
+params/spread = 360.0
+params/linear_velocity = 200.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 2.0
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/direction = 1.0
+randomness/spread = 0.67
+
+[node name="Areo" type="Area2D" parent="."]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision/layers = 2
+collision/mask = 4100
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areo"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
 [node name="Ardo" type="Sprite" parent="."]
 
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="Fumo" type="Particles2D" parent="."]
 
@@ -45,7 +129,7 @@ config/lifetime = 0.5
 config/process_mode = 1
 config/half_extents = Vector2( 5, 15 )
 config/local_space = false
-config/texture = ExtResource( 3 )
+config/texture = ExtResource( 4 )
 params/direction = -90.0
 params/spread = 15.0
 params/linear_velocity = 200.0
@@ -65,11 +149,11 @@ params/anim_initial_pos = 0.0
 
 [node name="Aspekto_malaktiva" type="Sprite" parent="."]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="Aspekto_aktiva" type="Sprite" parent="."]
 
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
@@ -90,5 +174,9 @@ playback/process_mode = 1
 playback/active = false
 playback/repeat = true
 playback/speed = 1.0
+
+[connection signal="area_enter" from="Areo" to="." method="_on_Areo_area_enter"]
+
+[connection signal="area_exit" from="Areo" to="." method="_on_Areo_area_exit"]
 
 

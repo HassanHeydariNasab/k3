@@ -17,3 +17,11 @@ http://freesound.org/people/theta4/sounds/66136/
 http://freesound.org/people/egolessdub/sounds/97470/
 
 http://freesound.org/people/morrisjm/sounds/268756/
+
+
+
+http://freesound.org/people/weaveofk/sounds/396470/
+
+http://freesound.org/people/Kinoton/sounds/347446/
+
+https://freesound.org/people/Psyche_Sound_Studios/sounds/253539/
