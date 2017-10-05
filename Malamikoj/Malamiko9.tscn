@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://Malamikoj/Malamiko.gd" type="Script" id=1]
+[ext_resource path="res://Malamikoj/Malamiko9.gd" type="Script" id=1]
 [ext_resource path="res://Malamikoj/malamiko9.png" type="Texture" id=2]
 [ext_resource path="res://Sonoj/347446__kinoton__angle-grinder-on-off-grinding.ogg" type="AudioStream" id=3]
-[ext_resource path="res://Sonoj/127197__dave-des__fast-simple-chop-5.ogg" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -47,13 +46,6 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
-[node name="Kasxi" type="Tween" parent="."]
-
-playback/process_mode = 1
-playback/active = false
-playback/repeat = false
-playback/speed = 1.0
-
 [node name="Bati" type="Tween" parent="."]
 
 playback/process_mode = 1
@@ -75,19 +67,6 @@ stream/autoplay = false
 stream/paused = false
 stream/loop_restart_time = 0.0
 stream/buffering_ms = 500
-
-[node name="Kasxi_sono" type="StreamPlayer" parent="."]
-
-stream/stream = ExtResource( 4 )
-stream/play = false
-stream/loop = false
-stream/volume_db = 10.0
-stream/autoplay = false
-stream/paused = false
-stream/loop_restart_time = 0.0
-stream/buffering_ms = 500
-
-[connection signal="tween_complete" from="Kasxi" to="." method="_on_Kasxi_tween_complete"]
 
 [connection signal="tween_step" from="Bati" to="." method="_on_Bati_tween_step"]
 

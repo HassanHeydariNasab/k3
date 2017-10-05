@@ -58,23 +58,23 @@ func _process(delta):
 		Sparko.set_emitting(true)
 		if not Sparko_sono.is_playing():
 			Sparko_sono.set("stream/play", T.Agordejo.get_value("Agordoj", "Sonoj", true))
+		if T.get_layer_bit(get_collider(), 2):
+			print(get_collider())
+			vivo -= 0.0005
+			Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
 	else:
 		Sparko.set_emitting(false)
 		Sparko_sono.stop()
 
 func _on_Areo_area_enter( areo ):
 	if T.get_layer_bit(areo, 2):
-		if rapidega:
-			areo.get_parent().Kasxi_sono.play()
-			areo.get_parent().Kasxi.start()
-		else:
-			areo.get_parent().Bati.resume_all()
-			areo.get_parent().Bati_sono.play()
-			Trancxata.set_rot(get_rot())
-			Trancxata.set_emitting(true)
-			if vivo > 0:
-				vivo -= 1
-				Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
+		areo.get_parent().Bati.resume_all()
+		areo.get_parent().Bati_sono.play()
+		Trancxata.set_rot(get_rot())
+		Trancxata.set_emitting(true)
+		if vivo > 0:
+			vivo -= 0.2
+			Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
 
 func _on_Areo_area_exit( areo ):
 	Trancxata.set_emitting(false)

@@ -27,3 +27,9 @@ http://freesound.org/people/Kinoton/sounds/347446/
 https://freesound.org/people/Psyche_Sound_Studios/sounds/253539/
 
 https://freesound.org/people/dave.des/sounds/127197/
+
+## Bildoj
+
+http://www.freepik.com/free-vector/decorative-ornamental-frames-collection_1170034.htm
+
+http://www.freepik.com/free-vector/calligraphic-frames-decorative-floral-set_724574.htm
