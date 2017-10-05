@@ -10,6 +10,7 @@ onready var Aspekto_malaktiva = get_node("Aspekto_malaktiva")
 onready var Sparko = get_node("/root/Radiko/Sparko")
 onready var Sparko_sono = get_node("/root/Radiko/Sparko_sono")
 onready var Trancxata = get_node("Trancxata")
+onready var Trancxi_sono = get_node("Trancxi_sono")
 
 const RAPIDO = 4
 const RAPIDEGO = 10
@@ -59,12 +60,14 @@ func _process(delta):
 		if not Sparko_sono.is_playing():
 			Sparko_sono.set("stream/play", T.Agordejo.get_value("Agordoj", "Sonoj", true))
 		if T.get_layer_bit(get_collider(), 2):
-			print(get_collider())
+			if not Trancxi_sono.is_playing():
+				Trancxi_sono.play()
 			vivo -= 0.0005
 			Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
 	else:
 		Sparko.set_emitting(false)
 		Sparko_sono.stop()
+		Trancxi_sono.stop()
 
 func _on_Areo_area_enter( areo ):
 	if T.get_layer_bit(areo, 2):
