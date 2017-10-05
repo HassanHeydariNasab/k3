@@ -13,7 +13,7 @@ var lingvo_elektita = false
 var akcelometro_aktivita = true
 var os = OS.get_name()
 
-var steloj = 1000
+var steloj = 10
 
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:

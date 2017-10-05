@@ -42,8 +42,10 @@ func _fixed_process(delta):
 		T.Radiko.Steloj_nombroj.set_text(str(int(T.steloj)))
 		move(Vector2(RAPIDEGO*cos(get_rot()), -RAPIDEGO*sin(get_rot())))
 		rapidega = true
+		T.Radiko.Fonmuziko.set_volume_db(5)
 	else:
 		rapidega = false
+		T.Radiko.Fonmuziko.set_volume_db(-2)
 	if Input.is_action_pressed("turni_dekstre"):
 		rotate(deg2rad(-3))
 	elif Input.is_action_pressed("turni_maldekstre"):
@@ -63,6 +65,7 @@ func _process(delta):
 func _on_Areo_area_enter( areo ):
 	if T.get_layer_bit(areo, 2):
 		if rapidega:
+			areo.get_parent().Kasxi_sono.play()
 			areo.get_parent().Kasxi.start()
 		else:
 			areo.get_parent().Bati.resume_all()

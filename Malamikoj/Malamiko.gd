@@ -1,17 +1,18 @@
 extends KinematicBody2D
 
 onready var Kasxi = get_node("Kasxi")
+onready var Kasxi_sono = get_node("Kasxi_sono")
 onready var Bati = get_node("Bati")
 onready var Bati_sono = get_node("Bati_sono")
 
 func _ready():
 	Kasxi.interpolate_property(self, "transform/scale",
-		Vector2(1.5,1.5), Vector2(2.5,2.5), 0.4,
-		Tween.TRANS_EXPO, Tween.EASE_IN
+		Vector2(1.5,1.5), Vector2(2.2,2.2), 0.4,
+		Tween.TRANS_EXPO, Tween.EASE_OUT
 	)
 	Kasxi.interpolate_property(self, "visibility/opacity",
 		1, 0, 0.4,
-		Tween.TRANS_EXPO, Tween.EASE_IN
+		Tween.TRANS_EXPO, Tween.EASE_OUT
 	)
 	Bati.interpolate_property(self, "transform/rot",
 		0, 1400, 2,

@@ -248,20 +248,19 @@ editor/display_folded = true
 
 [node name="Malamiko" parent="Malamikoj" instance=ExtResource( 4 )]
 
+transform/pos = Vector2( 2564, -9050 )
+
+[node name="Malamiko2" parent="Malamikoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 2564, -10950 )
+
+[node name="Malamiko3" parent="Malamikoj" instance=ExtResource( 4 )]
+
 transform/pos = Vector2( 400, -350 )
 
 [node name="Malamiko1" parent="Malamikoj" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 400, -3600 )
-
-[node name="Malamiko2" parent="Malamikoj" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 400, -4200 )
-
-[node name="Malamiko3" parent="Malamikoj" instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1000, -4750 )
-transform/rot = 89.3346
+transform/pos = Vector2( 2564, -6750 )
 
 [node name="Kvadrato" parent="." instance=ExtResource( 5 )]
 
@@ -305,7 +304,7 @@ randomness/hue_variation = 0.02
 stream/stream = ExtResource( 7 )
 stream/play = false
 stream/loop = true
-stream/volume_db = 0.0
+stream/volume_db = 8.0
 stream/autoplay = false
 stream/paused = false
 stream/loop_restart_time = 0.0
@@ -327,7 +326,7 @@ stream/buffering_ms = 500
 stream/stream = ExtResource( 9 )
 stream/play = false
 stream/loop = true
-stream/volume_db = 0.0
+stream/volume_db = -2.0
 stream/autoplay = true
 stream/paused = false
 stream/loop_restart_time = 0.0
