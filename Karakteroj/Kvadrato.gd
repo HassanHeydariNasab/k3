@@ -64,6 +64,8 @@ func _process(delta):
 				Trancxi_sono.play()
 			vivo -= 0.0005
 			Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
+		else:
+			Trancxi_sono.stop()
 	else:
 		Sparko.set_emitting(false)
 		Sparko_sono.stop()

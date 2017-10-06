@@ -224,24 +224,33 @@ transform/pos = Vector2( 400, -1650 )
 
 [node name="Malamikoj" type="Node2D" parent="."]
 
-editor/display_folded = true
 transform/rot = 90.0
 
 [node name="Malamiko1" parent="Malamikoj" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 3750, 250 )
+transform/pos = Vector2( 4585, 539 )
 
 [node name="Malamiko2" parent="Malamikoj" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 850, 250 )
+transform/pos = Vector2( 2700, 250 )
 
 [node name="Malamiko3" parent="Malamikoj" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1250, 500 )
+transform/pos = Vector2( 1050, 500 )
 
-[node name="Malamiko 2" parent="Malamikoj" instance=ExtResource( 4 )]
+[node name="Malamiko" parent="Malamikoj" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( -150, 300 )
+transform/pos = Vector2( 300, 150 )
+
+[node name="Malamiko4" parent="Malamikoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 4950, 1800 )
+transform/rot = -90.0
+
+[node name="Malamiko5" parent="Malamikoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -2.62268e-05, 600 )
+transform/rot = 180.0
 
 [node name="Blokiloj" type="TileMap" parent="."]
 
