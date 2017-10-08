@@ -37,7 +37,9 @@ func _ready():
 	set_process(true)
 
 func _fixed_process(delta):
-	move(Vector2(RAPIDO*cos(get_rot()), -RAPIDO*sin(get_rot())))
+	move(Vector2(0,0))
+	if Input.is_action_pressed("iri"):
+		move(Vector2(RAPIDO*cos(get_rot()), -RAPIDO*sin(get_rot())))
 	if Input.is_action_pressed("rapidi") and T.steloj > 0:
 		T.steloj -= 0.04
 		T.Radiko.Steloj_nombroj.set_text(str(int(T.steloj)))

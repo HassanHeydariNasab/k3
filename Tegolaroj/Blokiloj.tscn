@@ -93,7 +93,7 @@ extents = Vector2( 64, 64 )
 [sub_resource type="RectangleShape2D" id=17]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32, 18 )
+extents = Vector2( 16, 10 )
 
 [node name="Blokiloj" type="Node2D"]
 
