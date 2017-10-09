@@ -55,6 +55,7 @@ func _fixed_process(delta):
 		rotate(deg2rad(3))
 
 func _process(delta):
+#	print(Aspekto_aktiva.get_opacity())
 	if is_colliding():
 		Sparko.set_global_pos(get_collision_pos())
 		Sparko.set_rot(get_rot())
@@ -64,8 +65,12 @@ func _process(delta):
 		if T.get_layer_bit(get_collider(), 2):
 			if not Trancxi_sono.is_playing():
 				Trancxi_sono.play()
-			vivo -= 0.0005
-			Aspekto_aktiva.set_opacity(Aspekto_aktiva.get_opacity()*vivo/VIVO)
+			if vivo > 0:
+				vivo -= 0.05
+				Aspekto_aktiva.set_opacity(vivo/VIVO)
+			else:
+				get_tree().reload_current_scene()
+			print(vivo)
 		else:
 			Trancxi_sono.stop()
 	else:

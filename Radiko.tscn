@@ -407,7 +407,6 @@ stream/buffering_ms = 500
 
 [node name="Kanvaso" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -481,6 +480,7 @@ margin/right = 869.0
 margin/bottom = 415.0
 custom_fonts/font = ExtResource( 11 )
 toggle_mode = true
+is_pressed = true
 enabled_focus_mode = 0
 shortcut = null
 text = "Motoro"
