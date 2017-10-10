@@ -36,6 +36,3 @@ func _on_Iri_toggled( b ):
 	else:
 		Input.action_release("iri")
 
-func _on_Pordego_body_enter( korpo ):
-	if T.get_layer_bit(korpo,1):
-		get_tree().reload_current_scene()

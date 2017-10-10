@@ -47,7 +47,6 @@ func _on_Areo_body_enter( korpo ):
 		T.steloj += 1
 		T.Radiko.Steloj_nombroj.set_text(str(int(T.steloj)))
 		T.Radiko.Stelon_kapti_sono.set("stream/play", T.Agordejo.get_value("Agordoj", "Sonoj", true))
-		print("v:", str(korpo.vivo))
 		if korpo.vivo <= 9.5:
 			korpo.vivo += 0.5
 			korpo.Aspekto_aktiva.set_opacity(korpo.vivo/korpo.VIVO)

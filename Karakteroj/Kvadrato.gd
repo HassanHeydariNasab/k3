@@ -70,7 +70,6 @@ func _process(delta):
 				Aspekto_aktiva.set_opacity(vivo/VIVO)
 			else:
 				get_tree().reload_current_scene()
-			print(vivo)
 		else:
 			Trancxi_sono.stop()
 	else:
