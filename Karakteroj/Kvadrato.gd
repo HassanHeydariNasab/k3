@@ -38,7 +38,7 @@ func _ready():
 
 func _fixed_process(delta):
 	move(Vector2(0,0))
-	if Input.is_action_pressed("iri"):
+	if Input.is_action_pressed("iri") and not Input.is_action_pressed("halti"):
 		move(Vector2(RAPIDO*cos(get_rot()), -RAPIDO*sin(get_rot())))
 	if Input.is_action_pressed("rapidi") and T.steloj > 0:
 		T.steloj -= 0.04

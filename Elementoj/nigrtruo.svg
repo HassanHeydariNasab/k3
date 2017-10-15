@@ -15,9 +15,26 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="nigrtruo.svg">
+   sodipodi:docname="nigrtruo.svg"
+   inkscape:export-filename="/home/hsn6/k3/Elementoj/nigrtruo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
-     id="defs4" />
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5357"
+       x="-0.12"
+       width="1.24"
+       y="-0.12"
+       height="1.24">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.4714287"
+         id="feGaussianBlur5359" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,18 +42,37 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="151.43141"
-     inkscape:cy="102.0152"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="70.811172"
+     inkscape:cy="94.695012"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      units="px"
-     inkscape:window-width="1375"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
+     inkscape:window-width="1024"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       empspacing="2" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -45,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,22 +90,29 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-796.36214)">
-    <path
-       sodipodi:type="star"
-       style="fill:#3366cc;stroke:#003399;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4186"
-       sodipodi:sides="8"
-       sodipodi:cx="128"
-       sodipodi:cy="924.36214"
-       sodipodi:r1="93.647514"
-       sodipodi:r2="51.208385"
-       sodipodi:arg1="2.3705614"
-       sodipodi:arg2="2.2839884"
-       inkscape:flatsided="false"
-       inkscape:rounded="0.96"
-       inkscape:randomized="0"
-       d="M 60.836715,989.62275 C 21.780435,976.67727 109.6859,1001.3295 94.496853,963.08986 68.887645,898.61663 65.491544,985.01344 34.36215,923.01674 c -18.463122,-36.7708 26.263661,42.81953 42.5629,5.03973 27.48102,-63.69791 -36.012162,-5.00754 -14.185682,-70.85763 12.945482,-39.05628 -11.706763,48.84919 26.532892,33.66013 64.47324,-25.6092 -21.923578,-29.0053 40.07312,-60.1347 36.7708,-18.46312 -42.819525,26.26366 -5.03973,42.5629 63.69791,27.48102 5.00755,-36.01216 70.85764,-14.18568 39.05628,12.94548 -48.84919,-11.70676 -33.66014,26.53289 25.6092,64.47324 29.00531,-21.92358 60.1347,40.07312 18.46312,36.7708 -26.26366,-42.81952 -42.5629,-5.03972 -27.48102,63.6979 36.01216,5.00754 14.18568,70.85763 -12.94548,39.05629 11.70677,-48.84919 -26.53289,-33.66014 -64.47324,25.60921 21.92358,29.00531 -40.07312,60.13473 -36.770797,18.4631 42.81953,-26.26369 5.03973,-42.56293 -63.697911,-27.48102 -5.00755,36.01213 -70.857635,14.18568 z"
-       inkscape:transform-center-x="3.046849"
-       inkscape:transform-center-y="-6.0603162" />
+    <circle
+       r="74.714287"
+       cy="924.36212"
+       cx="128"
+       id="circle5315"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffcc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter:url(#filter5357)" />
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffcc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4134"
+       cx="128"
+       cy="924.36212"
+       r="74.714287" />
+    <circle
+       r="98.633499"
+       cy="924.36212"
+       cx="128"
+       id="circle4158"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffcc00;stroke-width:10.73299694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:257.59192789, 10.73299699;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#404040;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.53741497;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path5363"
+       cx="128"
+       cy="924.36212"
+       r="39.94577" />
   </g>
 </svg>

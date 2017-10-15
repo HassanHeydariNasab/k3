@@ -28,7 +28,7 @@ margin/top = 0.0
 margin/right = 360.0
 margin/bottom = 1200.0
 
-[node name="N1" type="Button" parent="Niveloj"]
+[node name="Ludi" type="Button" parent="Niveloj"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -42,58 +42,7 @@ custom_fonts/font = ExtResource( 2 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Nivelo 1"
-flat = false
-
-[node name="N2" type="Button" parent="Niveloj"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 160.0
-margin/right = 353.0
-margin/bottom = 260.0
-custom_fonts/font = ExtResource( 2 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Nivelo 2"
-flat = false
-
-[node name="N3" type="Button" parent="Niveloj"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 280.0
-margin/right = 353.0
-margin/bottom = 380.0
-custom_fonts/font = ExtResource( 2 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Nivelo 3"
-flat = false
-
-[node name="N4" type="Button" parent="Niveloj"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 400.0
-margin/right = 353.0
-margin/bottom = 500.0
-custom_fonts/font = ExtResource( 2 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Nivelo 4"
+text = "Ludi"
 flat = false
 
 [node name="Lingvo" type="Button" parent="."]
@@ -181,7 +130,7 @@ shortcut = null
 text = "Vendejo"
 flat = false
 
-[connection signal="pressed" from="Niveloj/N1" to="." method="_on_N1_pressed"]
+[connection signal="pressed" from="Niveloj/Ludi" to="." method="_on_Ludi_pressed"]
 
 [connection signal="pressed" from="Lingvo" to="." method="_on_Lingvo_pressed"]
 

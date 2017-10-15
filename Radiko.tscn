@@ -1,24 +1,27 @@
-[gd_scene load_steps=20 format=1]
+[gd_scene load_steps=23 format=1]
 
 [ext_resource path="res://Radiko.gd" type="Script" id=1]
 [ext_resource path="res://Elementoj/Nigrtruo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Elementoj/Stelo.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Malamikoj/Malamiko9.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Malamikoj/Malamiko4.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Tegolaroj/Blokiloj.tres" type="TileSet" id=6]
-[ext_resource path="res://Karakteroj/Kvadrato.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Partikloj/sparko.png" type="Texture" id=8]
-[ext_resource path="res://Sonoj/253539__psyche-sound-studios__bubble-sizzle.ogg" type="AudioStream" id=9]
-[ext_resource path="res://Sonoj/97470__egolessdub__keys19.ogg" type="AudioStream" id=10]
-[ext_resource path="res://Muzikoj/353501__inspectorj__ambience-wind-chimes.ogg" type="AudioStream" id=11]
-[ext_resource path="res://Tiparoj/jomhuria.fnt" type="BitmapFont" id=12]
-[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=13]
-[ext_resource path="res://Butonoj/turni_dekstre.png" type="Texture" id=14]
-[ext_resource path="res://Butonoj/turni_dekstre_premita.png" type="Texture" id=15]
-[ext_resource path="res://Butonoj/turni_maldekstre.png" type="Texture" id=16]
-[ext_resource path="res://Butonoj/turni_maldekstre_premita.png" type="Texture" id=17]
-[ext_resource path="res://Butonoj/rapidi.png" type="Texture" id=18]
-[ext_resource path="res://Butonoj/rapidi_premita.png" type="Texture" id=19]
+[ext_resource path="res://Estroj/Estro-1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Elementoj/Stelo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Malamikoj/Malamiko9.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Malamikoj/Malamiko4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Tegolaroj/Blokiloj.tres" type="TileSet" id=7]
+[ext_resource path="res://Karakteroj/Kvadrato.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Partikloj/sparko.png" type="Texture" id=9]
+[ext_resource path="res://Sonoj/253539__psyche-sound-studios__bubble-sizzle.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Sonoj/97470__egolessdub__keys19.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Muzikoj/353501__inspectorj__ambience-wind-chimes.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Tiparoj/jomhuria.fnt" type="BitmapFont" id=13]
+[ext_resource path="res://Elementoj/stelo.png" type="Texture" id=14]
+[ext_resource path="res://Butonoj/turni_dekstre.png" type="Texture" id=15]
+[ext_resource path="res://Butonoj/turni_dekstre_premita.png" type="Texture" id=16]
+[ext_resource path="res://Butonoj/turni_maldekstre.png" type="Texture" id=17]
+[ext_resource path="res://Butonoj/turni_maldekstre_premita.png" type="Texture" id=18]
+[ext_resource path="res://Butonoj/rapidi.png" type="Texture" id=19]
+[ext_resource path="res://Butonoj/rapidi_premita.png" type="Texture" id=20]
+[ext_resource path="res://Butonoj/bombi_premita.png" type="Texture" id=21]
+[ext_resource path="res://Butonoj/bombi.png" type="Texture" id=22]
 
 [node name="Radiko" type="Node2D"]
 
@@ -45,185 +48,189 @@ drag_margin/bottom = 0.2
 
 [node name="Nigrtruo" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2814.51, -7235.04 )
+transform/pos = Vector2( 2816, -7232 )
+
+[node name="Estro" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 4128, -96 )
 
 [node name="Elementoj" type="Node2D" parent="."]
 
 editor/display_folded = true
 
-[node name="Stelo2" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo2" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -800 )
 
-[node name="Stelo44" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo44" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -700 )
 
-[node name="Stelo45" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo45" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -600 )
 
-[node name="Stelo3" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo3" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -900 )
 
-[node name="Stelo39" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo39" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1400 )
 
-[node name="Stelo40" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo40" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1300 )
 
-[node name="Stelo41" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo41" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1200 )
 
-[node name="Stelo42" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo42" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1100 )
 
-[node name="Stelo43" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo43" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1000 )
 
-[node name="Stelo4" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo4" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -1700 )
 
-[node name="Stelo6" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo6" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1700 )
 
-[node name="Stelo7" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo7" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -1750 )
 
-[node name="Stelo8" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo8" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -1800 )
 
-[node name="Stelo9" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo9" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1800 )
 
-[node name="Stelo10" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo10" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -1850 )
 
-[node name="Stelo11" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo11" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -1750 )
 
-[node name="Stelo12" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo12" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -1850 )
 
-[node name="Stelo13" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo13" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1900 )
 
-[node name="Stelo14" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo14" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -1900 )
 
-[node name="Stelo15" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo15" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -1950 )
 
-[node name="Stelo16" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo16" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -1950 )
 
-[node name="Stelo17" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo17" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -1650 )
 
-[node name="Stelo18" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo18" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -1600 )
 
-[node name="Stelo19" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo19" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1600 )
 
-[node name="Stelo20" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo20" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -1550 )
 
-[node name="Stelo21" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo21" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -1550 )
 
-[node name="Stelo22" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo22" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -2000 )
 
-[node name="Stelo23" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo23" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -2000 )
 
-[node name="Stelo24" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo24" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2050 )
 
-[node name="Stelo25" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo25" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 350, -1500 )
 
-[node name="Stelo26" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo26" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 300, -2050 )
 
-[node name="Stelo27" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo27" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 450, -1500 )
 
-[node name="Stelo28" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo28" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2150 )
 
-[node name="Stelo29" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo29" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2250 )
 
-[node name="Stelo30" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo30" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2350 )
 
-[node name="Stelo31" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo31" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2450 )
 
-[node name="Stelo32" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo32" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2550 )
 
-[node name="Stelo33" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo33" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2650 )
 
-[node name="Stelo34" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo34" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2750 )
 
-[node name="Stelo35" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo35" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2850 )
 
-[node name="Stelo36" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo36" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -2950 )
 
-[node name="Stelo37" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo37" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -3050 )
 
-[node name="Stelo38" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo38" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -3150 )
 
-[node name="Stelo5" parent="Elementoj" instance=ExtResource( 3 )]
+[node name="Stelo5" parent="Elementoj" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 400, -1650 )
 
@@ -232,28 +239,28 @@ transform/pos = Vector2( 400, -1650 )
 editor/display_folded = true
 transform/rot = 90.0
 
-[node name="Malamiko1" parent="Malamikoj" instance=ExtResource( 4 )]
+[node name="Malamiko1" parent="Malamikoj" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 4585, 539 )
 
-[node name="Malamiko2" parent="Malamikoj" instance=ExtResource( 4 )]
+[node name="Malamiko2" parent="Malamikoj" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 2700, 250 )
 
-[node name="Malamiko3" parent="Malamikoj" instance=ExtResource( 4 )]
+[node name="Malamiko3" parent="Malamikoj" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1056, 527 )
 
-[node name="Malamiko" parent="Malamikoj" instance=ExtResource( 5 )]
+[node name="Malamiko" parent="Malamikoj" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 320, 152 )
 
-[node name="Malamiko4" parent="Malamikoj" instance=ExtResource( 5 )]
+[node name="Malamiko4" parent="Malamikoj" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 4969, 1856 )
 transform/rot = -90.0
 
-[node name="Malamiko5" parent="Malamikoj" instance=ExtResource( 5 )]
+[node name="Malamiko5" parent="Malamikoj" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 64, 618 )
 transform/rot = 180.0
@@ -261,7 +268,7 @@ transform/rot = 180.0
 [node name="Blokiloj" type="TileMap" parent="."]
 
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 128, 128 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -274,14 +281,14 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 3
 occluder/light_mask = 1
-tile_data = IntArray( -3866605, 7, -3866604, 7, -3866603, 7, -3866602, 7, -3866601, 7, -3866600, 7, -3801069, 7, -3801064, 7, -3735533, 7, -3735528, 7, -3669997, 7, -3669992, 7, -3604461, 7, -3604460, 7, -3604457, 7, -3604456, 7, -3538924, 7, -3538921, 7, -3473388, 7, -3473385, 7, -3407852, 7, -3407849, 7, -3342316, 7, -3342313, 7, -3276780, 7, -3276777, 7, -3211244, 7, -3211241, 7, -3145708, 7, -3145705, 7, -3080172, 7, -3080169, 7, -3014636, 7, -3014633, 7, -2949100, 7, -2949097, 7, -2883564, 7, -2883561, 7, -2818028, 7, -2818025, 7, -2752492, 7, -2752489, 7, -2686956, 7, -2686953, 7, -2621426, 7, -2621420, 7, -2621417, 7, -2555903, 7, -2555902, 7, -2555901, 7, -2555900, 7, -2555899, 7, -2555898, 7, -2555897, 7, -2555896, 7, -2555895, 7, -2555894, 7, -2555893, 7, -2555892, 7, -2555891, 7, -2555890, 7, -2555889, 7, -2555888, 7, -2555887, 7, -2555886, 7, -2555885, 7, -2555884, 7, -2555881, 7, -2490367, 7, -2490345, 7, -2424831, 7, -2424809, 7, -2359295, 7, -2359292, 7, -2359291, 7, -2359290, 7, -2359289, 7, -2359288, 7, -2359287, 7, -2359286, 7, -2359285, 7, -2359284, 7, -2359283, 7, -2359282, 7, -2359281, 7, -2359280, 7, -2359279, 7, -2359278, 7, -2359277, 7, -2359276, 7, -2359275, 7, -2359274, 7, -2359273, 7, -2293759, 7, -2293756, 7, -2228223, 7, -2228220, 7, -2162687, 7, -2162684, 7, -2097151, 7, -2097148, 7, -2031615, 7, -2031612, 7, -1966079, 7, -1966076, 7, -1900543, 7, -1900540, 7, -1835007, 7, -1835004, 7, -1769471, 7, -1769468, 7, -1703935, 7, -1703932, 7, -1638399, 7, -1638396, 7, -1572863, 7, -1572860, 7, -1507327, 7, -1507324, 7, -1441791, 7, -1441788, 7, -1376255, 7, -1376252, 7, -1310719, 7, -1310716, 7, -1245183, 7, -1245180, 7, -1179647, 7, -1179644, 7, -1114111, 7, -1114108, 7, -1048575, 7, -1048572, 7, -983039, 7, -983036, 7, -917503, 7, -917500, 7, -851967, 7, -851964, 7, -786431, 7, -786428, 7, -720895, 7, -720892, 7, -655359, 7, -655356, 7, -589823, 7, -589820, 7, -524287, 7, -524284, 7, -458751, 7, -458748, 7, -393215, 7, -393212, 7, -327679, 7, -327676, 7, -262143, 7, -262140, 7, -196608, 7, -196607, 7, -196604, 7, -131071, 7, -131068, 7, -65535, 7, -65532, 7, -65531, 7, 1, 7, 4, 7, 65537, 7, 65540, 7, 131073, 7, 131076, 7, 196609, 7, 196612, 7, 262145, 7, 262148, 7, 327681, 7, 327684, 7, 393217, 7, 393218, 7, 393219, 7, 393220, 7 )
+tile_data = IntArray( -3866605, 7, -3866604, 7, -3866603, 7, -3866602, 7, -3866601, 7, -3866600, 7, -3801069, 7, -3801064, 7, -3735533, 7, -3735528, 7, -3669997, 7, -3669992, 7, -3604461, 7, -3604460, 7, -3604457, 7, -3604456, 7, -3538924, 7, -3538921, 7, -3473388, 7, -3473385, 7, -3407852, 7, -3407849, 7, -3342316, 7, -3342313, 7, -3276780, 7, -3276777, 7, -3211244, 7, -3211241, 7, -3145708, 7, -3145705, 7, -3080172, 7, -3080169, 7, -3014636, 7, -3014633, 7, -2949100, 7, -2949097, 7, -2883564, 7, -2883561, 7, -2818028, 7, -2818025, 7, -2752492, 7, -2752489, 7, -2686956, 7, -2686953, 7, -2621426, 7, -2621420, 7, -2621417, 7, -2555903, 7, -2555902, 7, -2555901, 7, -2555900, 7, -2555899, 7, -2555898, 7, -2555897, 7, -2555896, 7, -2555895, 7, -2555894, 7, -2555893, 7, -2555892, 7, -2555891, 7, -2555890, 7, -2555889, 7, -2555888, 7, -2555887, 7, -2555886, 7, -2555885, 7, -2555884, 7, -2555881, 7, -2490367, 7, -2490345, 7, -2424831, 7, -2424809, 7, -2359295, 7, -2359292, 7, -2359291, 7, -2359290, 7, -2359289, 7, -2359288, 7, -2359287, 7, -2359286, 7, -2359285, 7, -2359284, 7, -2359283, 7, -2359282, 7, -2359281, 7, -2359280, 7, -2359279, 7, -2359278, 7, -2359277, 7, -2359276, 7, -2359275, 7, -2359274, 7, -2359273, 7, -2293759, 7, -2293756, 7, -2228223, 7, -2228220, 7, -2162687, 7, -2162684, 7, -2097151, 7, -2097148, 7, -2031615, 7, -2031612, 7, -1966079, 7, -1966076, 7, -1900543, 7, -1900540, 7, -1835007, 7, -1835004, 7, -1769471, 7, -1769468, 7, -1703935, 7, -1703932, 7, -1638399, 7, -1638396, 7, -1572863, 7, -1572860, 7, -1507327, 7, -1507324, 7, -1441791, 7, -1441788, 7, -1376255, 7, -1376252, 7, -1310719, 7, -1310716, 7, -1245183, 7, -1245180, 7, -1179647, 7, -1179644, 7, -1114111, 7, -1114108, 7, -1048575, 7, -1048572, 7, -983039, 7, -983036, 7, -917503, 7, -917500, 7, -851967, 7, -851964, 7, -786431, 7, -786428, 7, -720895, 7, -720892, 7, -655359, 7, -655356, 7, -589823, 7, -589820, 7, -524287, 7, -524284, 7, -458751, 7, -458748, 7, -458729, 7, -458728, 7, -458727, 7, -458726, 7, -458725, 7, -458724, 7, -458723, 7, -458722, 7, -458721, 7, -458720, 7, -458719, 7, -458718, 7, -458717, 7, -458716, 7, -458715, 7, -458714, 7, -458713, 7, -458712, 7, -393215, 7, -393212, 7, -393193, 7, -393176, 7, -327679, 7, -327676, 7, -327657, 7, -327640, 7, -262143, 7, -262140, 7, -262121, 7, -262104, 7, -196608, 7, -196607, 7, -196604, 7, -196585, 7, -196568, 7, -131071, 7, -131068, 7, -131049, 7, -131032, 7, -65535, 7, -65532, 7, -65531, 7, -65513, 7, -65496, 7, 1, 7, 4, 7, 23, 7, 40, 7, 65537, 7, 65540, 7, 65559, 7, 65576, 7, 131073, 7, 131076, 7, 131095, 7, 131112, 7, 196609, 7, 196612, 7, 196631, 7, 196648, 7, 262145, 7, 262148, 7, 262167, 7, 262184, 7, 327681, 7, 327684, 7, 327703, 7, 327720, 7, 393217, 7, 393218, 7, 393219, 7, 393220, 7, 393239, 7, 393256, 7, 458775, 7, 458792, 7, 524311, 7, 524328, 7, 589847, 7, 589848, 7, 589849, 7, 589850, 7, 589851, 7, 589852, 7, 589853, 7, 589854, 7, 589855, 7, 589856, 7, 589857, 7, 589858, 7, 589859, 7, 589860, 7, 589861, 7, 589862, 7, 589863, 7, 589864, 7 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Kvadrato" parent="." instance=ExtResource( 7 )]
+[node name="Kvadrato" parent="." instance=ExtResource( 8 )]
 
-transform/pos = Vector2( 384, 512 )
+transform/pos = Vector2( 4160, 1024 )
 transform/rot = 90.0
 
 [node name="Sparko" type="Particles2D" parent="."]
@@ -292,7 +299,7 @@ config/lifetime = 0.5
 config/emitting = false
 config/process_mode = 1
 config/explosiveness = 0.9
-config/texture = ExtResource( 8 )
+config/texture = ExtResource( 9 )
 params/direction = 0.0
 params/spread = 20.0
 params/linear_velocity = 400.0
@@ -318,7 +325,7 @@ randomness/hue_variation = 0.02
 
 [node name="Sparko_sono" type="StreamPlayer" parent="."]
 
-stream/stream = ExtResource( 9 )
+stream/stream = ExtResource( 10 )
 stream/play = false
 stream/loop = true
 stream/volume_db = 8.0
@@ -329,7 +336,7 @@ stream/buffering_ms = 500
 
 [node name="Stelon_kapti_sono" type="StreamPlayer" parent="."]
 
-stream/stream = ExtResource( 10 )
+stream/stream = ExtResource( 11 )
 stream/play = false
 stream/loop = false
 stream/volume_db = 0.0
@@ -340,7 +347,7 @@ stream/buffering_ms = 500
 
 [node name="Fonmuziko" type="StreamPlayer" parent="."]
 
-stream/stream = ExtResource( 11 )
+stream/stream = ExtResource( 12 )
 stream/play = false
 stream/loop = true
 stream/volume_db = -2.0
@@ -351,6 +358,7 @@ stream/buffering_ms = 500
 
 [node name="Kanvaso" type="CanvasLayer" parent="."]
 
+editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -378,7 +386,7 @@ margin/left = 600.0
 margin/top = 0.0
 margin/right = 693.0
 margin/bottom = 100.0
-custom_fonts/font = ExtResource( 12 )
+custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 1, 0.6, 0, 1 )
 custom_constants/shadow_offset_x = 2
@@ -395,10 +403,11 @@ max_lines_visible = -1
 
 transform/pos = Vector2( 730, 45 )
 transform/scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="Kontroliloj" type="Control" parent="Kanvaso"]
 
+visibility/opacity = 0.4
 anchor/top = 1
 anchor/right = 1
 anchor/bottom = 1
@@ -413,6 +422,7 @@ margin/bottom = 560.0
 
 [node name="Iri" type="Button" parent="Kanvaso/Kontroliloj"]
 
+visibility/visible = false
 rect/scale = Vector2( 0.7, 0.7 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -422,7 +432,7 @@ margin/left = 576.0
 margin/top = 232.0
 margin/right = 869.0
 margin/bottom = 415.0
-custom_fonts/font = ExtResource( 12 )
+custom_fonts/font = ExtResource( 13 )
 toggle_mode = true
 is_pressed = true
 enabled_focus_mode = 0
@@ -434,8 +444,8 @@ flat = false
 
 transform/pos = Vector2( 608, 392 )
 transform/scale = Vector2( 0.7, 0.7 )
-normal = ExtResource( 14 )
-pressed = ExtResource( 15 )
+normal = ExtResource( 15 )
+pressed = ExtResource( 16 )
 bitmask = null
 shape = null
 shape_centered = true
@@ -448,8 +458,8 @@ visibility_mode = 0
 
 transform/pos = Vector2( 13, 392 )
 transform/scale = Vector2( 0.7, 0.7 )
-normal = ExtResource( 16 )
-pressed = ExtResource( 17 )
+normal = ExtResource( 17 )
+pressed = ExtResource( 18 )
 bitmask = null
 shape = null
 shape_centered = true
@@ -462,14 +472,28 @@ visibility_mode = 0
 
 transform/pos = Vector2( 297, 355 )
 transform/scale = Vector2( 0.8, 0.8 )
-normal = ExtResource( 18 )
-pressed = ExtResource( 19 )
+normal = ExtResource( 19 )
+pressed = ExtResource( 20 )
 bitmask = null
 shape = null
 shape_centered = true
 shape_visible = true
 passby_press = true
 action = "rapidi"
+visibility_mode = 0
+
+[node name="Halti" type="TouchScreenButton" parent="Kanvaso/Kontroliloj"]
+
+transform/pos = Vector2( 608, 200 )
+transform/scale = Vector2( 0.6, 0.6 )
+normal = ExtResource( 21 )
+pressed = ExtResource( 22 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = "halti"
 visibility_mode = 0
 
 [node name="Steloj_nombroj" type="Label" parent="Kanvaso"]
@@ -484,7 +508,7 @@ margin/left = 600.0
 margin/top = 0.0
 margin/right = 200.0
 margin/bottom = 100.0
-custom_fonts/font = ExtResource( 12 )
+custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 1, 0.6, 0, 1 )
 custom_constants/shadow_offset_x = 2
